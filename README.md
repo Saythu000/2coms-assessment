@@ -5,9 +5,10 @@
 
 ---
 
-## 🚀 Live Deployment Links
+## 🚀 Live Deployment & Downloads
 *   **Web Console (Desktop):** [https://2coms-connect-web.vercel.app](https://2coms-connect-web.vercel.app)
 *   **Mobile App (PWA):** [https://2coms-connect-mobile.vercel.app](https://2coms-connect-mobile.vercel.app)
+*   **Android App (APK):** [Download 2COMS_CONNECT_FINAL.apk](./2COMS_CONNECT_FINAL.apk) (Located in the root directory)
 
 ---
 
@@ -22,11 +23,12 @@
 ## 🛠️ Architecture & Technical Excellence
 This platform was built following enterprise-grade architectural standards to ensure maintainability and scalability.
 
-1.  **Feature-Sliced Design (FSD):** Modular folder structure where logic is decoupled into functional slices (`auth`, `dashboard`, `knowledge`).
-2.  **Factory Pattern (Service Layer):** All data operations are encapsulated in asynchronous `AuthService` and `ContentService` classes, simulating a production API environment.
-3.  **Atomic Design:** Centralized UI atoms (Buttons, Badges, Cards) ensure 100% design consistency across the ecosystem.
-4.  **Multi-Tenancy:** Dynamic visibility controls that filter content based on the user's department and role.
-5.  **AI-First Workflow:** 80% of the logic was generated through iterative prompt engineering (documented in `prompts.txt`).
+1.  **Unified Ecosystem:** Real-time cloud synchronization between Web and APK via Firebase Firestore.
+2.  **Feature-Sliced Design (FSD):** Modular folder structure where logic is decoupled into functional slices (`auth`, `dashboard`, `knowledge`).
+3.  **Factory Pattern (Service Layer):** All data operations are encapsulated in asynchronous `AuthService` and `ContentService` classes, simulating a production API environment.
+4.  **Atomic Design:** Centralized UI atoms (Buttons, Badges, Cards) ensure 100% design consistency across the ecosystem.
+5.  **Multi-Tenancy:** Dynamic visibility controls that filter content based on the user's department and role.
+6.  **AI-First Workflow:** 80% of the logic was generated through iterative prompt engineering (documented in `prompts.txt`).
 
 ---
 
@@ -67,6 +69,9 @@ cd 2coms-connect/mobile-app
 npm install
 npm run dev
 ```
+
+### **3. Android APK**
+The production APK is located in the root folder as `2COMS_CONNECT_FINAL.apk`. You can install it on any Android device by enabling "Install from Unknown Sources."
 
 ---
 
