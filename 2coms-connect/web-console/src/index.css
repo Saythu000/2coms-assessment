@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F8FAFC;
+  color: #0A192F;
+}
+
+/* Custom Utilities for "Premium Tactile" Design */
+@layer components {
+  .card-premium {
+    @apply bg-white rounded-xl border border-gray-200/60 shadow-sm transition-all duration-300;
+  }
+  .card-premium:hover {
+    @apply shadow-md border-blue-200/80 -translate-y-0.5;
+  }
+}

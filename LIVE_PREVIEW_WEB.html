@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2COMS Connect - Live Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .navy-gradient { background: linear-gradient(135deg, #0A192F 0%, #112240 100%); }
+    </style>
+</head>
+<body>
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
+            <div class="p-6 border-b border-gray-100">
+                <h1 class="text-xl font-bold text-[#0A192F]">2COMS <span class="text-[#007BFF]">Connect</span></h1>
+            </div>
+            <nav class="flex-1 mt-4">
+                <div class="flex items-center space-x-3 px-6 py-3 bg-blue-50 text-[#007BFF] border-r-4 border-[#007BFF] cursor-pointer">
+                    <i class="fas fa-th-large"></i>
+                    <span class="font-medium text-sm">Daily Pulse</span>
+                </div>
+                <div class="flex items-center space-x-3 px-6 py-3 text-gray-500 hover:bg-gray-50 cursor-pointer">
+                    <i class="fas fa-users"></i>
+                    <span class="font-medium text-sm">Colleagues</span>
+                </div>
+                <div class="flex items-center space-x-3 px-6 py-3 text-gray-500 hover:bg-gray-50 cursor-pointer">
+                    <i class="fas fa-book-open"></i>
+                    <span class="font-medium text-sm">Knowledge Hub</span>
+                </div>
+                <div class="flex items-center space-x-3 px-6 py-3 text-gray-500 hover:bg-gray-50 cursor-pointer">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="font-medium text-sm">Admin Console</span>
+                </div>
+            </nav>
+            <div class="p-6 border-t border-gray-100 flex items-center space-x-3">
+                <img src="https://i.pravatar.cc/150?u=1" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="text-sm font-bold text-[#0A192F]">Ananya Sharma</p>
+                    <p class="text-xs text-gray-500">HR Admin</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto">
+            <!-- Header -->
+            <header class="h-16 bg-white border-b border-gray-200 px-8 flex items-center justify-between sticky top-0 z-20">
+                <div class="relative w-96">
+                    <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Find a colleague by skill..." class="w-full bg-gray-50 border border-gray-200 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                </div>
+                <div class="flex items-center space-x-6">
+                    <i class="far fa-bell text-gray-400 text-lg cursor-pointer"></i>
+                    <div class="h-8 w-px bg-gray-200"></div>
+                    <span class="text-sm font-semibold text-gray-600">Employee Mode</span>
+                </div>
+            </header>
+
+            <div class="p-8 max-w-6xl mx-auto space-y-8">
+                <!-- Management Vision -->
+                <section class="navy-gradient rounded-2xl p-8 text-white relative overflow-hidden shadow-xl">
+                    <div class="relative z-10 max-w-2xl">
+                        <span class="bg-amber-500/20 text-amber-300 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-4 inline-block">Vision 2026</span>
+                        <h1 class="text-4xl font-bold mb-4">Management Vision 2026</h1>
+                        <p class="text-blue-100 text-lg leading-relaxed mb-8">Our mission is to empower every individual through AI-first innovation and collaborative excellence across all 2COMS verticals.</p>
+                        <button class="bg-[#007BFF] hover:bg-blue-600 px-6 py-3 rounded-lg font-bold transition-all transform hover:scale-105">Explore Strategic Roadmap</button>
+                    </div>
+                    <i class="fas fa-chart-line absolute right-[-20px] bottom-[-20px] text-white/5 text-[200px] -rotate-12"></i>
+                </section>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- News Feed -->
+                    <div class="lg:col-span-2 space-y-6">
+                        <h2 class="text-xl font-bold text-[#0A192F]">Latest Impact Footprints</h2>
+                        
+                        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:border-blue-200 transition-all cursor-pointer group">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-[10px] font-bold text-blue-600 uppercase bg-blue-50 px-2 py-1 rounded">Project Win</span>
+                                <span class="text-xs text-gray-400">2 hours ago</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#0A192F] mb-3 group-hover:text-blue-600">Project Apollo 11 Success</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">The Tech team successfully deployed the project dashboard ahead of schedule. Recognition to Rahul and Team!</p>
+                            <div class="flex space-x-2">
+                                <button class="text-sm bg-gray-50 px-3 py-1 rounded hover:bg-blue-50">🚀 24</button>
+                                <button class="text-sm bg-gray-50 px-3 py-1 rounded hover:bg-blue-50">🔥 12</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Widgets -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                            <h2 class="font-bold text-[#0A192F] mb-4">Top Contributors</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xs">1</div>
+                                        <span class="text-sm font-medium">Amit Patel</span>
+                                    </div>
+                                    <i class="fas fa-trophy text-yellow-500"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
+                            <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-user-plus text-blue-500 text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-[#0A192F]">Welcome Amit!</h4>
+                            <p class="text-xs text-gray-500 mb-4">Joined the Tech Team today</p>
+                            <button class="w-full bg-[#007BFF] text-white py-2 rounded-lg text-sm font-bold">Say Hello</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
