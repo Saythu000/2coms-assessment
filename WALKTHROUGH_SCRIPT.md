@@ -1,61 +1,67 @@
-# 2COMS Connect - Video Walkthrough Script
-**Target Duration:** 3-5 Minutes
+# 2COMS Connect - Complete Feature & Technical Walkthrough
+**Target Duration:** 6-8 Minutes
+**Objective:** Prove 100% functional coverage of the Employee and Admin experience.
 
 ---
 
-## 🎙️ Phase 1: The Introduction (30 Seconds)
+## 🎙️ Phase 1: Intro & Technical Stack (1 Minute)
 *   **Action:** Show the Login Screen on the Web Console.
 *   **Script:** 
-    > "Hello, I'm presenting 2COMS Connect—a digital social glue designed to strengthen organizational culture and align leadership vision. This AI-first platform was built using an enterprise-grade stack: React, TypeScript, and Tailwind CSS, following Feature-Sliced Design principles. Let’s start by logging in as an employee to see the Daily Pulse."
+    > "Hello, I am presenting 2COMS Connect—a unified corporate intranet ecosystem.
+    > This is built with React 18, TypeScript, and a Firebase Cloud backbone. 
+    > We followed **Feature-Sliced Design** for modularity and used a **Factory Service Layer** for data management. Let's enter the Employee portal."
 
 ---
 
-## 🎙️ Phase 2: Employee Experience - Web (1 Minute)
-*   **Action:** Log in as Employee (`EMP-1045`). Scroll through the Dashboard.
-*   **Key Highlights:**
-    *   **New Joinee Carousel:** "At the top, we have our interactive welcome slider. I can instantly welcome Michael Chen with one click." (Click 'Say Welcome').
-    *   **Management Vision:** "The Strategic Hero card houses our mission. Tapping 'Explore' reveals our Q3 and Q4 roadmaps." (Open Modal).
-    *   **Daily Pulse:** "The feed uses Multi-tenancy filtering. Since I'm in TECH, I see Tech wins like Project Apollo, but global news is accessible to everyone."
-    *   **Gamification:** Point to the top contributor sidebar.
+## 🎙️ Phase 2: Employee Pulse & Engagement (1.5 Minutes)
+*   **Action:** Log in as Employee (`EMP-1045`).
+*   **Highlights:**
+    1.  **Welcome Carousel:** "At the top, we have our interactive horizontal carousel for new joinees. I can instantly welcome a colleague with one click." (Click 'Say Welcome').
+    2.  **Management Vision:** "The Strategic Hero card houses our mission. Tapping 'Explore' opens our Q3/Q4 roadmaps." (Open Modal).
+    3.  **Culture Calendar:** "Next to the feed is the Pulse Ticker. Let's open the full Culture Calendar to see our upcoming engagement milestones and workshops." (Navigate to Calendar).
 
 ---
 
-## 🎙️ Phase 3: Networking & Knowledge (1 Minute)
-*   **Action:** Navigate to 'Colleague Directory' and then 'Knowledge Hub'.
-*   **Key Highlights:**
-    *   **Silo Breakers:** "Our directory allows skill-based discovery. I can search for 'React' experts and start a two-way instant message thread immediately." (Type 'React' and open chat).
-    *   **The Vault:** "In the Knowledge Hub, we have a centralized resource vault. These aren't just mockups—clicking 'Download' triggers a real, authenticated file generation for the user." (Trigger a download).
-    *   **Gallery:** "The Media Gallery uses a high-fidelity lightbox to celebrate our milestones." (Open a photo).
+## 🎙️ Phase 3: Networking & Silo Breaking (1 Minute)
+*   **Action:** Go to 'Colleague Directory'.
+*   **Highlights:**
+    1.  **Expert Search:** "Our Silo-Breaker directory allows skill-based discovery. I can search for 'React'—notice how Michael Chen and Rahul Varma appear instantly. This helps break departmental silos by finding experts across the company." (Type 'React').
+    2.  **Instant Messenger:** "I can open a two-way message drawer to collaborate with Michael in real-time." (Click Michael's 'Chat' button).
 
 ---
 
-## 🎙️ Phase 4: Admin Command Center (45 Seconds)
-*   **Action:** Logout and Login as Admin (`ADMIN-2026`). Navigate to 'Admin Console'.
-*   **Key Highlights:**
-    *   **Moderation:** "Admins have the exclusive Control Pillar. I can review flagged content and either approve or trash it to keep the pulse clutter-free." (Approve an item).
-    *   **Content Creator:** "I can also publish a new Strategic Vision or Project Win directly to the entire ecosystem from here."
+## 🎙️ Phase 4: Gamification & Recognition (1 Minute)
+*   **Action:** Go to 'Leaderboards' then the 'Me' Profile.
+*   **Highlights:**
+    1.  **The Podium:** "Recognition is driven by our high-fidelity Leaderboard. We use Gold/Silver/Bronze podiums to motivate cultural contributions." (Show Podium).
+    2.  **Profile "Me" Page:** "Every employee has a personal Pulse wall showing their earned badges, culture points, and a 'Received Kudos' wall for peer appreciation." (Show Profile).
 
 ---
 
-## 🎙️ Phase 5: Mobile-First Engagement (45 Seconds)
-*   **Action:** Switch to the Mobile App tab (`localhost:5174`). Show the Left-aligned UI.
-*   **Key Highlights:**
-    *   **Consistency:** "The Mobile App mirrors the web experience 1:1. We’ve used a viewport-locked CSS architecture to ensure it feels native on any device."
-    *   **Podium:** Go to Me -> Global Standings. "Check out our gamification podium—it’s high-fidelity and drives real engagement."
-    *   **Admin on the Go:** "Even on mobile, HR Admins have access to the Shield tab to manage the pulse while on the move."
+## 🎙️ Phase 5: Knowledge Hub & Two-Way Forum (1.5 Minutes)
+*   **Action:** Go to 'Knowledge Hub' then 'The Forum'.
+*   **Highlights:**
+    1.  **The Vault:** "Our Knowledge Hub is fully functional. Tapping 'Download' triggers real JavaScript Blob logic to save authenticated documents locally." (Trigger download).
+    2.  **Community Forum:** "The Forum allows for true two-way exchange. I can open a discussion thread, view comments, and post a reply instantly." (Open thread, type 'Great point!', and send).
+    3.  **Vote Toggle:** "Notice the one-member, one-vote toggle logic—I can upvote once, and tap again to remove it, preventing spam." (Toggle upvote).
 
 ---
 
-## 🎙️ Phase 6: Technical Architecture (30 Seconds)
-*   **Action:** Quickly show the project folder structure in your editor (src/features, src/core/services).
-*   **Script:**
-    > "Under the hood, we used a **Factory Service Layer** to decouple UI from data, and **Atomic Design** for our component library. 80% of this platform was generated through iterative AI prompt engineering, ensuring rapid delivery without compromising on SOLID engineering standards. Thank you for viewing 2COMS Connect."
+## 🎙️ Phase 6: Unified Ecosystem - Live Cloud Sync (1 Minute)
+*   **Action:** Show the Web Admin Console and the Mobile App side-by-side.
+*   **Highlights:**
+    1.  **Admin Moderation:** "Logging in as Admin on the Web, I have the Control Pillar. I can moderate community content from this queue." (Approve an item).
+    2.  **Real-Time Bridge:** "Watch: When I publish a new Vision on the Web Admin Console, it appears **instantly** on my phone on the right without a refresh. This proves our unified cloud architecture is production-ready."
 
 ---
 
-### **💡 Pro-Tips for your Recording:**
-1.  **Browser Zoom:** Set your browser zoom to 100% or 110% so the text is clear.
-2.  **Mobile View:** Use the "Responsive" developer tool (Ctrl+Shift+M) to show the Mobile App in a phone shape.
-3.  **No Dead Air:** Keep talking while you click. If the "Initialising..." screen shows, use that second to mention the "Asynchronous Service Layer."
+## 🎙️ Phase 7: Conclusion (30 Seconds)
+*   **Script:** 
+    > "In summary, 2COMS Connect is a feature-packed, cloud-synced ecosystem following elite architectural standards. It breaks silos, drives engagement, and is ready for organizational scale. Thank you."
 
-**Lead Developer, your walkthrough script is ready. Shall I proceed to prepare the final Submission Checklist?**
+---
+
+### **💡 Demo Pro-Tips:**
+*   **Web Console:** [https://2coms-connect-web.vercel.app](https://2coms-connect-web.vercel.app)
+*   **Mobile App:** [https://2coms-connect-mobile.vercel.app](https://2coms-connect-mobile.vercel.app)
+*   **Switching Roles:** Keep both `ADMIN-2026` and `EMP-1045` handy to show the transition between participation and control.

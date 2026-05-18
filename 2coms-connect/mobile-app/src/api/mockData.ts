@@ -18,6 +18,14 @@ export const MOCK_USERS = [
     department: 'TECH',
     avatar: 'https://i.pravatar.cc/150?u=2',
     skills: ['React', 'TypeScript', 'AI']
+  },
+  {
+    id: 'EMP-1046',
+    name: 'Michael Chen',
+    role: 'EMPLOYEE',
+    department: 'TECH',
+    avatar: 'https://i.pravatar.cc/150?u=3',
+    skills: ['React Native', 'Node.js', 'React']
   }
 ];
 

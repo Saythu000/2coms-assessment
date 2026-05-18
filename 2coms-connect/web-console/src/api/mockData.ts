@@ -7,7 +7,7 @@ import { IntranetContent, User, Event } from '../core/types';
 
 export const MOCK_USERS: User[] = [
   {
-    id: '1',
+    id: 'ADMIN-2026',
     name: 'Ananya Sharma',
     role: 'HR_ADMIN',
     department: 'HR',
@@ -15,12 +15,28 @@ export const MOCK_USERS: User[] = [
     skills: ['Talent Management', 'Culture Building']
   },
   {
-    id: '2',
+    id: 'EMP-1045',
     name: 'Rahul Varma',
     role: 'EMPLOYEE',
     department: 'TECH',
     avatar: 'https://i.pravatar.cc/150?u=2',
     skills: ['React', 'TypeScript', 'AI']
+  },
+  {
+    id: 'EMP-1046',
+    name: 'Michael Chen',
+    role: 'EMPLOYEE',
+    department: 'TECH',
+    avatar: 'https://i.pravatar.cc/150?u=3',
+    skills: ['React Native', 'Node.js', 'React']
+  },
+  {
+    id: 'EMP-1047',
+    name: 'Sarah Jenkins',
+    role: 'EMPLOYEE',
+    department: 'SALES',
+    avatar: 'https://i.pravatar.cc/150?u=4',
+    skills: ['Direct Sales', 'React for Sales']
   }
 ];
 

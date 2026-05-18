@@ -45,7 +45,11 @@ export const Directory = () => {
     );
   }
 
-  const filtered = MOCK_USERS.filter(u => u.name.toLowerCase().includes(searchTerm.toLowerCase()) || u.skills.some(s => s.toLowerCase().includes(searchTerm.toLowerCase())));
+  const filtered = MOCK_USERS.filter(u => 
+    u.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+    (u.skills && u.skills.some(s => s.toLowerCase().includes(searchTerm.toLowerCase()))) ||
+    u.department.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className={styles.contentArea}>
